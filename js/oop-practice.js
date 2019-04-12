@@ -143,3 +143,26 @@
 //
 //animal = new Animal(new Cat(), "Calico", "tan", 15, 24);
 //window.console.log("The " + animal.speak() + " has made a noise!");
+
+// STEP 9
+//String.prototype.findWords = function (word) {
+//    "use strict";
+//    var search, words, output;
+//    search = new RegExp(word, 'g', 'i');
+//    words = this.match(search);
+//    window.console.log(words);
+//    
+//    output = "text:\n" + this + "\n\n'" + word + "' was ";
+//    if (words === null) {
+//        output += "not found.";
+//    } else {
+//        output += "found " + words.length + " time";
+//        output += (words.length === 1) ? "." : "s.";
+//    }
+//    window.alert(output);
+//};
+//
+//var text, word;
+//text = window.prompt("Enter a paragraph of text");
+//word = window.prompt("Enter a search word");
+//text.findWords(word);
