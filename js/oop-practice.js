@@ -34,3 +34,15 @@
 //}
 //var animal = new Animal("The Animal has been created");
 //animal.display();
+
+// STEP 5
+//function Animal(type, breed, color, height, length) {
+//    "use strict";
+//    
+//    // Properties
+//    this.type = type;
+//    this.breed = breed;
+//    this.color = color;
+//    this.height = height;
+//    this.length = length;
+//}
