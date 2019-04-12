@@ -46,3 +46,22 @@
 //    this.height = height;
 //    this.length = length;
 //}
+
+// STEP 6
+function Animal(type, breed, color, height, length) {
+    "use strict";
+    
+    // Properties
+    this.type = type;
+    this.breed = breed;
+    this.color = color;
+    this.height = height;
+    this.length = length;
+}
+var animal, i;
+animal = new Animal("toy", "Pomeranian", "black", 15, 24);
+for (i in animal) {
+    if (animal.hasOwnProperty(i)) {
+        window.console.log(i + " = " + animal[i]);
+    }
+}
