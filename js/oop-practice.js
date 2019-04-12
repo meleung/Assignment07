@@ -48,20 +48,57 @@
 //}
 
 // STEP 6
-function Animal(type, breed, color, height, length) {
-    "use strict";
-    
-    // Properties
-    this.type = type;
-    this.breed = breed;
-    this.color = color;
-    this.height = height;
-    this.length = length;
-}
-var animal, i;
-animal = new Animal("toy", "Pomeranian", "black", 15, 24);
-for (i in animal) {
-    if (animal.hasOwnProperty(i)) {
-        window.console.log(i + " = " + animal[i]);
-    }
-}
+//function Animal(type, breed, color, height, length) {
+//    "use strict";
+//    
+//    // Properties
+//    this.type = type;
+//    this.breed = breed;
+//    this.color = color;
+//    this.height = height;
+//    this.length = length;
+//}
+//var animal, i;
+//animal = new Animal("toy", "Pomeranian", "black", 15, 24);
+//for (i in animal) {
+//    if (animal.hasOwnProperty(i)) {
+//        window.console.log(i + " = " + animal[i]);
+//    }
+//}
+
+// STEP 7
+//function Cat() {
+//    "use strict";
+//}
+//
+//var Dog = function () {
+//    "use strict";
+//};
+//
+//function Animal(type, breed, color, height, length) {
+//    "use strict";
+//    
+//    // Properties
+//    this.type = type;
+//    this.breed = breed;
+//    this.color = color;
+//    this.height = height;
+//    this.length = length;
+//}
+//
+//Animal.prototype.speak = function () {
+//    "use strict";
+//    if (this.type instanceof Dog) {
+//        return "The " + this.color + " dog is barking!";
+//    } else if (this.type instanceof Cat) {
+//        return "The " + this.color + " cat is meowing!";
+//    }
+//};
+//
+//var animal;
+//
+//animal = new Animal(new Dog(), "Pomeranian", "black", 15, 24);
+//window.console.log(animal.speak());
+//
+//animal = new Animal(new Cat(), "Calico", "tan", 15, 24);
+//window.console.log(animal.speak());
