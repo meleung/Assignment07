@@ -36,20 +36,3 @@ var Album = function (artist, title) {
     };
     return self;
 };
-
-var jbox = new Jukebox();
-var album1 = new Album("Operation Ivy", "Energy");
-var album2 = new Album("Blink 182", "Dude Ranch");
-var album3 = new Album("New Found Glory", "Sticks and Stones");
-
-jbox.addAlbum(album1);
-jbox.addAlbum(album2);
-jbox.addAlbum(album3);
-
-album1.play();
-album1.play();
-album1.play();
-album2.play();
-album3.play();
-
-window.console.log("You favorite album is: " + jbox.favoriteAlbum());
