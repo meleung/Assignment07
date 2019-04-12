@@ -102,3 +102,44 @@
 //
 //animal = new Animal(new Cat(), "Calico", "tan", 15, 24);
 //window.console.log(animal.speak());
+
+// STEP 8
+//function Cat() {
+//    "use strict";
+//}
+//
+//var Dog = function () {
+//    "use strict";
+//};
+//
+//function Animal(type, breed, color, height, length) {
+//    "use strict";
+//    
+//    // Private Properties
+//    var _type, _breed, _color, _height, _length;
+//    _type = type;
+//    _breed = breed;
+//    _color = color;
+//    _height = height;
+//    _length = length;
+//    
+//    function checkType() {
+//        if (_type instanceof Dog) {
+//            return "dog";
+//        } else {
+//            return "cat";
+//        }
+//    }
+//    
+//    Animal.prototype.speak = function () {
+//        return checkType();
+//    };
+//}
+//
+//var animal;
+//
+//animal = new Animal(new Dog(), "Pomeranian", "black", 15, 24);
+//window.console.log("The " + animal.speak() + " has made a noise!");
+//
+//animal = new Animal(new Cat(), "Calico", "tan", 15, 24);
+//window.console.log("The " + animal.speak() + " has made a noise!");
