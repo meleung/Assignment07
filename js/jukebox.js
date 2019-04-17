@@ -40,7 +40,7 @@ var Album = function (artist, title) {
             return artist + " : " + title;
         },
         display: function () {
-            return this.getLabel() + ". The album has been played " + this.played + " times.";
+            return this.getLabel() + ". The album has been played " + this.played + " time" + (this.played === 1 ? "." : "s.");
         }
     };
     return self;
@@ -50,12 +50,11 @@ function playHandler() {
     "use strict";
     var menu = window.document.getElementById("dropDown");
     jukebox.playAlbum(menu.options[menu.selectedIndex].text);
-    //window.console.log(menu.options[menu.selectedIndex].text);
 }
 
 function showFavoriteHandler() {
     "use strict";
-    window.document.getElementById(favoriteAlbum).innerHTML = jukebox.favoriteAlbum();
+    window.document.getElementById("favoriteAlbum").innerHTML = jukebox.favoriteAlbum();
 }
 
 function main() {
